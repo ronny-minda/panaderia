@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::selection {
+background: #bb9230;
+color: #fff;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+  
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #bc9331;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+    background: #f1f1f1;
+    width: 5px;
+}
+
+.letas {
+    color: #1d1c1c;
+    transition: 0.5s color;
+}
+
+.letas:hover {
+    color: #bb9230;
+}
+
+.submit {
+    color: #fff;
+    background-color: #000;
+    transition: 0.3s background-color;
+}
+.submit:hover {
+    color: #fff;
+    background-color: #bc9331;
+}
+
+.inputt {
+    border: 1px solid #654f1b52;
+    transition: 0.4s border;
+}
+
+.inputt:focus {
+    border: 1px solid #513e14;
+}
+
+.estiloCapital::first-letter{
+	font-size:60px;
+	font-family:serif;
+	margin:0 20px;
+	float:left;
 }
