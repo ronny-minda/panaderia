@@ -1,5 +1,6 @@
 import Footer from "@/components/footer";
 import Head from "next/head";
+import Image from "next/image";
 
 const Detalles = () => {
   return (
@@ -59,17 +60,23 @@ const Detalles = () => {
             </div>
           </div>
           <div className="h-auto w-full lg:w-3/4 p-2">
-            <img
+            <Image
+              width={1000}
+              height={1000}
               className="my-5"
               src="img/detalles/detalle2.jpg"
               alt="detalle2"
             />
-            <img
+            <Image
+              width={1000}
+              height={1000}
               className="my-5"
               src="img/detalles/detalle3.jpg"
               alt="detalle3"
             />
-            <img
+            <Image
+              width={1000}
+              height={1000}
               className="my-5"
               src="img/detalles/detalle1.jpg"
               alt="detalle1"

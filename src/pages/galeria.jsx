@@ -6,15 +6,15 @@ import Image from "next/image";
 
 const Galeria = () => {
   const imgGalery = [
-    "img/galeria/galery1.jpg",
-    "img/galeria/galery2.jpg",
-    "img/galeria/galery3.jpg",
-    "img/galeria/galery4.jpg",
-    "img/galeria/galery5.jpg",
-    "img/galeria/galery6.jpg",
-    "img/galeria/galery7.jpg",
-    "img/galeria/galery8.jpg",
-    "img/galeria/galery9.jpg",
+    "/img/galeria/galery1.jpg",
+    "/img/galeria/galery2.jpg",
+    "/img/galeria/galery3.jpg",
+    "/img/galeria/galery4.jpg",
+    "/img/galeria/galery5.jpg",
+    "/img/galeria/galery6.jpg",
+    "/img/galeria/galery7.jpg",
+    "/img/galeria/galery8.jpg",
+    "/img/galeria/galery9.jpg",
   ];
 
   return (
@@ -81,9 +81,11 @@ const Imagenes = ({ value }) => {
         </div>
       )}
 
-      <img
+      <Image
         src={value}
         alt={value}
+        width={1000}
+        height={1000}
         className="h-full w-full absolute top-0 left-0 object-cover hover:blur-sm  transition-all z-0"
       />
     </Link>

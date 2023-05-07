@@ -1,19 +1,21 @@
+import Image from "next/image";
+
 const equipo = () => {
   const stado = [
     {
-      img: "img/card1.jpg",
+      img: "/img/card1.jpg",
       titulo: "CHEF",
       nombre: "JOSHUA FIELDS",
       des: "Everything We Bake, We Bake With Love. Designer Desserts.",
     },
     {
-      img: "img/card2.jpg",
+      img: "/img/card2.jpg",
       titulo: "BAKER",
       nombre: "DAVID WILLIS",
       des: "Everything We Bake, We Bake With Love. Designer Desserts.",
     },
     {
-      img: "img/card3.jpg",
+      img: "/img/card3.jpg",
       titulo: "BAKER",
       nombre: "ROBERTA COLLINS",
       des: "Everything We Bake, We Bake With Love. Designer Desserts.",
@@ -48,9 +50,11 @@ const equipo = () => {
                 className="m-3"
                 style={{ width: "346px", height: "460px" }}
               >
-                <img
+                <Image
                   src={value.img}
                   alt={value.img}
+                  width={1000}
+                  height={1000}
                   className="w-full h-1/2 object-cover"
                 />
                 <div

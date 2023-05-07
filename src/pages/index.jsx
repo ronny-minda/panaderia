@@ -9,26 +9,27 @@ import Mapa from "@/components/mapa";
 import Flecha from "@/svg/flecha";
 import Contacto from "@/components/contacto";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   const producto = [
     {
-      img: "img/product1.png",
+      img: "/img/product1.png",
       titulo: "BREAKFAST",
       des: "Lorem ipsum dolor sit amet, his convenire similique.",
     },
     {
-      img: "img/product2.png",
+      img: "/img/product2.png",
       titulo: "PASTRY",
       des: "Lorem ipsum dolor sit amet, his convenire similique.",
     },
     {
-      img: "img/product3.png",
+      img: "/img/product3.png",
       titulo: "SANDWICHES",
       des: "Lorem ipsum dolor sit amet, his convenire similique.",
     },
     {
-      img: "img/product4.png",
+      img: "/img/product4.png",
       titulo: "COFFEE",
       des: "Lorem ipsum dolor sit amet, his convenire similique.",
     },
@@ -50,7 +51,9 @@ export default function Home() {
             return (
               <article className="flex" key={key}>
                 <div className="flex flex-col items-center h-80 w-80">
-                  <img
+                  <Image
+                    height={1000}
+                    width={1000}
                     src={value.img}
                     alt={value.img}
                     className="h-56 w-80 object-contain"
@@ -82,8 +85,10 @@ export default function Home() {
 
       <section className="w-screen lg:flex mb-20 ">
         <div className="lg:w-1/2 lg:mr-2">
-          <img
-            src="img/horno1.jpg"
+          <Image
+            height={1000}
+            width={1000}
+            src="/img/horno1.jpg"
             alt="horno1"
             className="h-96 w-full object-cover"
           />

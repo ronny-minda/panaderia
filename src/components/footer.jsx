@@ -3,6 +3,7 @@ import Corazon from "@/svg/corazon";
 import Facebook from "@/svg/facebook";
 import Mundo from "@/svg/mundo";
 import Papel from "@/svg/papel";
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -17,8 +18,10 @@ const Footer = () => {
           style={{ maxWidth: "250px", width: "250px" }}
         >
           <Link href="/">
-            <img
-              src="img/logo.png"
+            <Image
+              width={1000}
+              height={1000}
+              src="/img/logo.png"
               alt="logo"
               style={{ width: "200px", height: "44px", objectFit: "contain" }}
             />
@@ -91,8 +94,10 @@ const Footer = () => {
           <div className="w-full h-3/4">
             <div className="h-20 w-full my-2 flex">
               <div style={{ width: "35%" }}>
-                <img
-                  src="img/footer1.jpg"
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/img/footer1.jpg"
                   alt="footer1"
                   className="w-full h-full object-cover"
                 />
@@ -121,8 +126,10 @@ const Footer = () => {
             </div>
             <div className="h-20 w-full my-2 flex">
               <div style={{ width: "35%" }}>
-                <img
-                  src="img/footer2.jpg"
+                <Image
+                  width={1000}
+                  height={1000}
+                  src="/img/footer2.jpg"
                   alt="footer1"
                   className="w-full h-full object-cover"
                 />

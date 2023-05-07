@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import MenuMobile from "@/svg/menuMobile";
 import Link from "next/link";
 import Equiz from "@/svg/equiz";
+import Image from "next/image";
 
 const Header = () => {
   const [estadoMobile, setEstadoMobile] = useState(false);
@@ -41,7 +42,9 @@ const Header = () => {
             </Link>
           </li>
           <Link href="/">
-            <img
+            <Image
+              width={1000}
+              height={1000}
               className="h-20 w-56 object-contain"
               src="/img/logo.png"
               alt="logo"

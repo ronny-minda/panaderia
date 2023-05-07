@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FlechaUp from "@/svg/flechaUp";
 import Head from "next/head";
+import Image from "next/image";
 
 const Nosotros = () => {
   return (
@@ -26,7 +27,12 @@ const Nosotros = () => {
           className="w-full h-auto flex flex-wrap justify-center"
           style={{ maxWidth: "1100px" }}
         >
-          <img src="img/nosotros/nosotros1.jpg" alt="nosotros1" />
+          <Image
+            width={1000}
+            height={1000}
+            src="/img/nosotros/nosotros1.jpg"
+            alt="nosotros1"
+          />
 
           <Comentarios img={""} color={"#000"} />
           <div
@@ -56,7 +62,12 @@ const Nosotros = () => {
               >
                 Caffe Americano
               </h4>
-              <img src="img/nosotros/nosotros2.jpg" alt="nosotros2" />
+              <Image
+                height={1000}
+                width={1000}
+                src="/img/nosotros/nosotros2.jpg"
+                alt="nosotros2"
+              />
             </div>
             <div className="h-auto w-full lg:w-3/5 p-5 lg:p-2">
               <p className="estiloCapital mb-5">
