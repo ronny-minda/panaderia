@@ -1,7 +1,9 @@
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
     <>
-      <h1>Pruebaaaa</h1>
+      <motion.h1 animate={{ x: 100 }}>Pruebaaaa</motion.h1>
       {/* <Head>
         <title>Home</title>
       </Head>
