@@ -1,10 +1,42 @@
 import { motion } from "framer-motion";
 
+import Carrusel from "@/components/carrusel";
+import Comentarios from "@/components/comentarios";
+import Footer from "@/components/footer";
+import Linea from "@/components/linea";
+import Equipo from "@/components/equipo";
+import Mapa from "@/components/mapa";
+import Flecha from "@/svg/flecha";
+import Contacto from "@/components/contacto";
+import Head from "next/head";
+import Image from "next/image";
+
 export default function Home() {
+  const producto = [
+    {
+      img: "/img/product1.png",
+      titulo: "BREAKFAST",
+      des: "Lorem ipsum dolor sit amet, his convenire similique.",
+    },
+    {
+      img: "/img/product2.png",
+      titulo: "PASTRY",
+      des: "Lorem ipsum dolor sit amet, his convenire similique.",
+    },
+    {
+      img: "/img/product3.png",
+      titulo: "SANDWICHES",
+      des: "Lorem ipsum dolor sit amet, his convenire similique.",
+    },
+    {
+      img: "/img/product4.png",
+      titulo: "COFFEE",
+      des: "Lorem ipsum dolor sit amet, his convenire similique.",
+    },
+  ];
   return (
     <>
-      <motion.h1 animate={{ x: 100 }}>Pruebaaaa</motion.h1>
-      {/* <Head>
+      <Head>
         <title>Home</title>
       </Head>
 
@@ -99,47 +131,7 @@ export default function Home() {
       <Equipo />
       <Contacto />
       <Mapa />
-      <Footer /> 
-      
-
-      import { motion } from "framer-motion";
-
-import Carrusel from "@/components/carrusel";
-import Comentarios from "@/components/comentarios";
-import Footer from "@/components/footer";
-import Linea from "@/components/linea";
-import Equipo from "@/components/equipo";
-import Mapa from "@/components/mapa";
-import Flecha from "@/svg/flecha";
-import Contacto from "@/components/contacto";
-import Head from "next/head";
-import Image from "next/image";
-
-export default function Home() {
-  const producto = [
-    {
-      img: "/img/product1.png",
-      titulo: "BREAKFAST",
-      des: "Lorem ipsum dolor sit amet, his convenire similique.",
-    },
-    {
-      img: "/img/product2.png",
-      titulo: "PASTRY",
-      des: "Lorem ipsum dolor sit amet, his convenire similique.",
-    },
-    {
-      img: "/img/product3.png",
-      titulo: "SANDWICHES",
-      des: "Lorem ipsum dolor sit amet, his convenire similique.",
-    },
-    {
-      img: "/img/product4.png",
-      titulo: "COFFEE",
-      des: "Lorem ipsum dolor sit amet, his convenire similique.",
-    },
-  ];
-      
-      */}
+      <Footer />
     </>
   );
 }
